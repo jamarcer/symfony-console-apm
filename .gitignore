@@ -3,3 +3,4 @@
 
 # Resources
 vendor/
+/.phpunit.result.cache
