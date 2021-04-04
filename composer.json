@@ -1,0 +1,38 @@
+{
+    "name": "jamarcer/symfony-console-apm",
+    "description": "Elastic APM for Symfony Console",
+    "version": "2.0.0",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+    {
+        "name": "Jesús Martínez",
+        "email": "jamarcer@gmail.com"
+    }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Jamarcer\\APM\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+          "Jamarcer\\Tests\\APM\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.0",
+        "symfony/console": "^5.0",
+       "symfony/event-dispatcher": "^5.0",
+        "zoilomora/elastic-apm-agent-php": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "extra": {
+        "symfony": {
+            "allow-contrib": false,
+            "require": "5.2.*"
+        }
+    }
+}
